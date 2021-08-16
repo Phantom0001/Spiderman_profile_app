@@ -26,9 +26,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
       body: SafeArea(
         child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(
+                  "https://www.designyourway.net/drb/wp-content/uploads/2018/05/Spiderman-wallpaper-1.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Center(
             child: Column(
               children: <Widget>[
